@@ -5,48 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Dreyer — Web Solutions</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Lucas Dreyer — Web Solutions</h1>
+    <h1>Lucas Dreyer.</h1>
 
     <nav>
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
+      <a href="#contato" class="hire-btn">Entrar em contato</a>
     </nav>
   </header>
 
   <main>
 
     <section id="inicio" class="hero">
-      <h2>Sites simples para pequenos negócios</h2>
+      <span class="hero-badge">Disponível para novos projetos</span>
+      <h2>Sites simples para <span class="text-gradient">pequenos negócios</span></h2>
       <p>
-        Este projeto ajuda pequenos negócios locais a terem uma presença online simples,
-        acessível e profissional, sem depender de sistemas complexos ou altos custos.
+        Ajudo pequenos negócios locais a terem uma presença online simples,
+        acessível e profissional — sem sistemas complexos ou altos custos.
       </p>
 
-      <a class="button" href="#contato">Entrar em contato</a>
+      <div class="hero-cta">
+        <a class="button" href="#contato">Solicitar orçamento</a>
+        <a class="button-outline" href="#servicos">Ver serviços →</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-number">20+</span>
+          <span class="hero-stat-label">Projetos entregues</span>
+        </div>
+        <div>
+          <span class="hero-stat-number">100%</span>
+          <span class="hero-stat-label">Clientes satisfeitos</span>
+        </div>
+        <div>
+          <span class="hero-stat-number">48h</span>
+          <span class="hero-stat-label">Prazo médio de resposta</span>
+        </div>
+      </div>
     </section>
+
+    <hr class="divider">
 
     <section id="sobre">
-      <h2>Sobre o projeto</h2>
+      <span class="section-label">Sobre o projeto</span>
+      <h2>Por que ter um site?</h2>
       <p>
         Muitos pequenos negócios precisam divulgar seus serviços, mas não possuem orçamento
-        ou conhecimento técnico para criar um site profissional. Esta página apresenta uma
-        solução simples usando fundamentos da web, como HTML, CSS e integração com formulário externo.
+        ou conhecimento técnico para criar um site profissional. Ofereço uma solução simples,
+        moderna e acessível — usando HTML, CSS e integração com formulários externos para que
+        você comece a aparecer online hoje mesmo.
       </p>
     </section>
 
+    <hr class="divider">
+
     <section id="servicos">
-      <h2>Serviços</h2>
+      <span class="section-label">Serviços</span>
+      <h2>O que eu ofereço</h2>
 
       <div class="cards">
         <article class="card">
+          <div class="card-icon">🌐</div>
           <h3>Criação de sites</h3>
           <p>
             Desenvolvimento de páginas simples e responsivas para apresentar negócios,
@@ -55,6 +86,7 @@
         </article>
 
         <article class="card">
+          <div class="card-icon">📋</div>
           <h3>Formulários online</h3>
           <p>
             Integração com formulários digitais para receber mensagens, pedidos,
@@ -63,6 +95,7 @@
         </article>
 
         <article class="card">
+          <div class="card-icon">💬</div>
           <h3>Contato rápido</h3>
           <p>
             Organização de informações de contato, links úteis e canais de comunicação
@@ -72,8 +105,11 @@
       </div>
     </section>
 
+    <hr class="divider">
+
     <section id="contato">
-      <h2>Contato</h2>
+      <span class="section-label">Contato</span>
+      <h2>Vamos conversar?</h2>
       <p>
         Preencha o formulário abaixo para solicitar um site, tirar dúvidas ou enviar uma mensagem.
       </p>
@@ -87,7 +123,7 @@
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          title="Contact Form Template">
+          title="Formulário de Contato">
         </iframe>
 
         <script>
@@ -121,6 +157,10 @@
 
   <footer>
     <p>&copy; 2026 Lucas Dreyer. Todos os direitos reservados.</p>
+    <div class="social-links">
+      <a class="social-link" href="#" aria-label="GitHub">GH</a>
+      <a class="social-link" href="#" aria-label="LinkedIn">in</a>
+    </div>
   </footer>
 
 </body>
