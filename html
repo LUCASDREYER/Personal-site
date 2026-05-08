@@ -27,8 +27,9 @@
       <h2>Sites simples para pequenos negócios</h2>
       <p>
         Este projeto ajuda pequenos negócios locais a terem uma presença online simples,
-        acessível e profissional.
+        acessível e profissional, sem depender de sistemas complexos ou altos custos.
       </p>
+
       <a class="button" href="#contato">Entrar em contato</a>
     </section>
 
@@ -36,8 +37,8 @@
       <h2>Sobre o projeto</h2>
       <p>
         Muitos pequenos negócios precisam divulgar seus serviços, mas não possuem orçamento
-        ou conhecimento técnico para criar um site complexo. Esta página apresenta uma solução
-        simples usando fundamentos da web.
+        ou conhecimento técnico para criar um site profissional. Esta página apresenta uma
+        solução simples usando fundamentos da web, como HTML, CSS e integração com formulário externo.
       </p>
     </section>
 
@@ -47,36 +48,73 @@
       <div class="cards">
         <article class="card">
           <h3>Criação de sites</h3>
-          <p>Páginas simples e responsivas para apresentar negócios, serviços ou projetos.</p>
+          <p>
+            Desenvolvimento de páginas simples e responsivas para apresentar negócios,
+            serviços, projetos ou profissionais autônomos.
+          </p>
         </article>
 
         <article class="card">
           <h3>Formulários online</h3>
-          <p>Integração com formulários para receber mensagens, pedidos ou solicitações.</p>
+          <p>
+            Integração com formulários digitais para receber mensagens, pedidos,
+            dúvidas ou solicitações de orçamento.
+          </p>
         </article>
 
         <article class="card">
           <h3>Contato rápido</h3>
-          <p>Links para WhatsApp, email e redes sociais para facilitar a comunicação.</p>
+          <p>
+            Organização de informações de contato, links úteis e canais de comunicação
+            para facilitar o relacionamento com clientes.
+          </p>
         </article>
       </div>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
+      <p>
+        Preencha o formulário abaixo para solicitar um site, tirar dúvidas ou enviar uma mensagem.
+      </p>
 
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      <div class="form-box">
+        <iframe
+          data-tally-src="https://tally.so/embed/J9XOLr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="566"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Contact Form Template">
+        </iframe>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        <script>
+          var d = document;
+          var w = "https://tally.so/widgets/embed.js";
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+          var v = function () {
+            if (typeof Tally !== "undefined") {
+              Tally.loadEmbeds();
+            } else {
+              d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
+                e.src = e.dataset.tallySrc;
+              });
+            }
+          };
 
-        <button type="submit">Enviar</button>
-      </form>
+          if (typeof Tally !== "undefined") {
+            v();
+          } else if (d.querySelector('script[src="' + w + '"]') == null) {
+            var s = d.createElement("script");
+            s.src = w;
+            s.onload = v;
+            s.onerror = v;
+            d.body.appendChild(s);
+          }
+        </script>
+      </div>
     </section>
 
   </main>
