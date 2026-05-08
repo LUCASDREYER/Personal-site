@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site</title>
+  <title>Lucas Dreyer — Web Solutions</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Meu Site</h1>
+    <h1>Lucas Dreyer — Web Solutions</h1>
 
     <nav>
+      <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#contato">Contato</a>
@@ -20,30 +23,43 @@
 
   <main>
 
-    <section id="inicio">
-      <h2>Bem-vindo</h2>
-      <p>Este é um site simples criado com HTML básico.</p>
-      <button>Saiba mais</button>
+    <section id="inicio" class="hero">
+      <h2>Sites simples para pequenos negócios</h2>
+      <p>
+        Este projeto ajuda pequenos negócios locais a terem uma presença online simples,
+        acessível e profissional.
+      </p>
+      <a class="button" href="#contato">Entrar em contato</a>
     </section>
 
     <section id="sobre">
-      <h2>Sobre</h2>
-      <p>Este projeto foi criado para demonstrar a estrutura fundamental de uma página web.</p>
+      <h2>Sobre o projeto</h2>
+      <p>
+        Muitos pequenos negócios precisam divulgar seus serviços, mas não possuem orçamento
+        ou conhecimento técnico para criar um site complexo. Esta página apresenta uma solução
+        simples usando fundamentos da web.
+      </p>
     </section>
 
     <section id="servicos">
       <h2>Serviços</h2>
 
-      <article>
-        <h3>Criação de sites</h3>
-        <p>Desenvolvimento de páginas simples para pequenos negócios.</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <h3>Criação de sites</h3>
+          <p>Páginas simples e responsivas para apresentar negócios, serviços ou projetos.</p>
+        </article>
 
-      <article>
-        <h3>Formulários online</h3>
-        <p>Integração com formulários para contato ou pedidos.</p>
-      </article>
+        <article class="card">
+          <h3>Formulários online</h3>
+          <p>Integração com formulários para receber mensagens, pedidos ou solicitações.</p>
+        </article>
 
+        <article class="card">
+          <h3>Contato rápido</h3>
+          <p>Links para WhatsApp, email e redes sociais para facilitar a comunicação.</p>
+        </article>
+      </div>
     </section>
 
     <section id="contato">
@@ -51,19 +67,13 @@
 
       <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
-
-        <br><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <br><br>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem"></textarea>
-
-        <br><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
 
         <button type="submit">Enviar</button>
       </form>
@@ -72,7 +82,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Lucas Dreyer. Todos os direitos reservados.</p>
   </footer>
 
 </body>
