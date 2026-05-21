@@ -65,3 +65,26 @@ Personal-site/
 ├── index.html
 ├── style.css
 └── README.md
+
+## Estrutura curta do site
+Header
+Nome do site: “Lucas.”
+Menu de navegação: Início, Sobre, Serviços e Entrar em contato.
+Seção inicial / Hero
+Apresentação principal do serviço.
+Botões para solicitar orçamento e ver serviços.
+Pequenos indicadores como projetos entregues, foco acessível e prazo de resposta.
+Seção Sobre
+Explica o objetivo do projeto.
+Mostra a importância de levar pequenos negócios para o digital.
+Seção Serviços
+Cards com os principais serviços:
+Criação de sites.
+Presença digital.
+Soluções com inteligência artificial.
+Seção Contato
+Texto convidando o usuário a preencher o formulário.
+Formulário integrado do Tally dentro da própria página.
+Footer
+Direitos autorais.
+Links sociais, como GitHub e LinkedIn.
